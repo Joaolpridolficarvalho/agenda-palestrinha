@@ -1,7 +1,7 @@
 name: "Vamos adicionar um novo evento?😁"
 description: Utilize essa opção para adicionar um novo evento!
-title: "(Atenção: O Título da Issue é gerado automaticamente. Sendo assim, não precisa definir um título manualmente aqui.)"
-labels: ["Adicionar", "template"]
+title: "adicionar evento"
+labels: ["adicionar"]
 body:
   - type: markdown
     attributes:

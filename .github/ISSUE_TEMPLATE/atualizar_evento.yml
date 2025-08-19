@@ -1,7 +1,7 @@
 name: "Atualizar informações de um evento 📅"
 description: Utilize essa opção para atualizar informações de um evento já cadastrado!
-title: "(Atenção: O Título da Issue é gerado automaticamente. Não precisa definir um título manualmente aqui.)"
-labels: ["Atualizar", "template"]
+title: "atualizar evento"
+labels: ["atualizar"]
 body:
   - type: markdown
     attributes:
