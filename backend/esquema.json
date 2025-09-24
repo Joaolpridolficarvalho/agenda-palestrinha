@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Esquema de Evento",
+  "type": "object",
+  "properties": {
+    "Nome do Evento": { "type": "string", "minLength": 1 },
+    "Site do Evento": { "type": "string", "format": "uri" },
+    "Formato do Evento": {
+      "type": "string",
+      "enum": ["Presencial", "Online", "Híbrido"]
+    },
+    "Cidade": { "type": "string" },
+    "Estado/Província": { "type": "string" },
+    "País": { "type": "string" },
+
+    "Ano do primeiro dia de Evento": { "type": "integer", "minimum": 2000 },
+    "Mês do primeiro dia de Evento": {
+      "type": "string",
+      "enum": [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+      ]
+    },
+    "Dia do primeiro dia de Evento": { "type": "integer", "minimum": 1, "maximum": 31 },
+
+    "Ano do último dia de Evento": { "type": "integer", "minimum": 2000 },
+    "Mês do último dia de Evento": {
+      "type": "string",
+      "enum": [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+      ]
+    },
+    "Dia do último dia de Evento": { "type": "integer", "minimum": 1, "maximum": 31 },
+
+    "Ano do primeiro dia de Submissão": { "type": "integer", "minimum": 2000 },
+    "Mês do primeiro dia de Submissão": {
+      "type": "string",
+      "enum": [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+      ]
+    },
+    "Dia do primeiro dia de Submissão": { "type": "integer", "minimum": 1, "maximum": 31 },
+
+    "Ano do último dia de Submissão": { "type": "integer", "minimum": 2000 },
+    "Mês do último dia de Submissão": {
+      "type": "string",
+      "enum": [
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+      ]
+    },
+    "Dia do último dia de Submissão": { "type": "integer", "minimum": 1, "maximum": 31 },
+
+    "Tipos de Submissão aceitos": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Palestra", "Workshop", "Lightning talk", "Outros"]
+      },
+      "minItems": 1
+    },
+    "Se marcou “Outros”, especifique": {
+      "type": ["string", "null"]
+    },
+
+    "Label": {
+      "type": "string",
+      "enum": ["evento:adicionar", "evento:remover"]
+    }
+  },
+  "required": [
+    "Nome do Evento",
+    "Site do Evento",
+    "Formato do Evento",
+    "País",
+    "Ano do primeiro dia de Evento",
+    "Mês do primeiro dia de Evento",
+    "Dia do primeiro dia de Evento",
+    "Ano do último dia de Evento",
+    "Mês do último dia de Evento",
+    "Dia do último dia de Evento",
+    "Ano do primeiro dia de Submissão",
+    "Mês do primeiro dia de Submissão",
+    "Dia do primeiro dia de Submissão",
+    "Ano do último dia de Submissão",
+    "Mês do último dia de Submissão",
+    "Dia do último dia de Submissão",
+    "Tipos de Submissão aceitos",
+    "Label"
+  ]
+}
