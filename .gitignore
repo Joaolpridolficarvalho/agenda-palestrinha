@@ -26,3 +26,7 @@ CLAUDE.md
 
 #Coverage
 .coverage
+
+# Node.js
+package-lock.json
+node_modules

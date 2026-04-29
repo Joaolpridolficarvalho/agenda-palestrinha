@@ -1,0 +1,16 @@
+{
+  "name": "agenda-palestrinha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "liquido": "nodemon ./node_modules/liquido/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "liquido": "^1.0.3"
+  }
+}

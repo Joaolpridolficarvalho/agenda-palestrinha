@@ -1,0 +1,30 @@
+.barra{
+   largura: 100%;
+    altura: 5%;
+    
+    posicao: fixa;
+    posicao-superior: 100%;
+}
+.barra imagem{
+   largura: 100%;
+    altura: 100%;
+    posicao: absoluta;
+    posicao-esquerda: 0%;
+}
+.conteudo{
+    exibicao: flex;
+    flex-agrupar: agrupar;
+    espacamento: 15px;
+
+}
+.evento{
+   largura: 10%;
+    altura: 15%;
+    posicao: absoluta;
+}
+.rodape{
+    posicao: fixa;
+    largura: 100%;
+    altura: 5%;
+    posicao-inferior: 0%;
+}

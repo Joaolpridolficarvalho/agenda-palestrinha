@@ -1,0 +1,15 @@
+{
+  "name": "agenda-palestrinha",
+  "version": "1.0.0",
+  "description": "Calendário de submissões de atividades para eventos de tecnologia",
+  "author": {"name": "Cumbuca Dev", "email": "cumbucadev@gmail.com", "url": "https://cumbuca.dev"},
+  "scripts": {
+    "liquido": "nodemon ./node_modules/liquido/index.js"
+  },
+  "dependencies": {
+    "liquido": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
