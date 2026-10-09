@@ -17,7 +17,7 @@ cabeca{
     posicao: relativa;
 }
 .evento{
-   largura: 10%;
+   largura: auto;
     altura: 15%;
     posicao: relativa;
     cor-fundo: azul;

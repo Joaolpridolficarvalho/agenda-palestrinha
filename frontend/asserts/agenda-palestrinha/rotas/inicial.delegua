@@ -1,0 +1,7 @@
+liquido.rotaGet(funcao(requisicao, resposta) {
+    var json = importar('json');
+
+    var dados = json.importarArquivoJson('../../../backend/banco_de_dados/eventos.json');
+
+    resposta.lmht({ "eventos": dados.eventos }).status(200);
+})
