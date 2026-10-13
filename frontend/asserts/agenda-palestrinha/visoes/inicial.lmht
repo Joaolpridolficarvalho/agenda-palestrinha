@@ -6,6 +6,8 @@
     </cabeça>
     <corpo>
         <principal classe="conteudo">
+            <p classe="mensagem">{{mensagem}}</p>
+            
             {{#cada eventos}}
             <secao classe="evento">
                 <titulo1>{{nome}}</titulo1>

@@ -42,3 +42,11 @@ p{
     tamanho-fonte: 14px;
 
 }
+.mensagem{
+    cor: vermelho;
+    tamanho-fonte: 16px;
+    posicao-superior: 50%;
+    posicao-esquerda: 50%;
+    posicao: absoluta;
+    margem: 20px;
+}
